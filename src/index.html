@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>
+    <%= json.project.title %>
+  </title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <!-- Safari, you're the worst -->
+  <meta name='format-detection' content='telephone=no'>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <%= t.include("partials/_head.html") %>
+</head>
+
+<body>
+
+  <responsive-child class="map-container">
+    <div class="outmost">
+      <section class="chatter">
+        <h1>Schrier dominates King County suburbs</h1>
+        <p>Democrat Kim Schrier racked up large margins in King County cities including Issaquah, Sammamish and Auburn, powering her win over Republican Dino Rossi in Washington’s 8th Congressional District. The map shows detailed results for votes counted as of Election Day. Click into the map to view detailed data.</p>
+      </section>
+
+      <div class="aspect-ratio-outer">
+        <div class="aspect-ratio-inner">
+
+          <leaflet-map zoom=10>
+            <tile-layer layer="cartoPositron"></tile-layer>
+
+          </leaflet-map>
+
+        </div>
+        <aside class="legend">
+          <h1>Precinct winner</h1>
+          <ul class="scale">
+            <li>
+              <span class="block" style="background-color: #002A5B"></span> Kim Schrier (65% or more)</li>
+            <li>
+              <span class="block" style="background-color: #90AAD6"></span> Kim Schrier</li>
+            <li>
+              <span class="block" style="background-color: #82001D"></span> Dino Rossi (65% or more)</li>
+            <li>
+              <span class="block" style="background-color: #C07A74"></span> Dino Rossi</li>
+            <li>
+              <span class="block" style="background-color: #C1C1C1"></span> Tie</li>
+          </ul>
+        </aside>
+      </div>
+
+
+      <div class="source">Source: King County Elections
+        <span class="credit">JIM BRUNNER & EMILY M. ENG / THE SEATTLE TIMES</div>
+    </div>
+  </responsive-child>
+
+  <script src="app.js"></script>
+  <% /*= t.include("partials/_foot.html"); */ %>
+    <%= t.include("partials/_workHere.html") %>
+</body>
+
+</html>

@@ -1,0 +1,20 @@
+{
+  "name": "congressional-district8",
+  "version": "0.0.1",
+  "homepage": "https://github.com/seattletimes/congressional-district8",
+  "authors": [
+    "The Seattle Times"
+  ],
+  "moduleType": [
+    "amd"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "src/js/lib",
+    "test",
+    "tests"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "s3": {
+    "stage": {
+      "bucket": "projects-staging.seattletimes.com",
+      "path": "disagreeable-key"
+    },
+    "live": {
+      "bucket": "projects.seattletimes.com",
+      "path": "2018/local/congressional-district8"
+    }
+  },
+  "title": "",
+  "description": "",
+  "url": "",
+  "slug": "",
+  "tags": []
+}
